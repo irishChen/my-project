@@ -1,18 +1,206 @@
-<table style="font-family: Arial, sans-serif; color: #666666; width: 662 px; height: 101 px;">
-<tbody>
-<tr style="height: 91 px;">
-<td style="text-align: left; vertical-align: top; width: 271.398px; height: 91px;">
-<h3><strong>Name Surname</strong></h3>
-<p>Job Title</p>
-</td>
-<td style="text-align: right; width: 389.602 px; height: 91 px;">
-<p style="text-align: left;"><strong>Phone:</strong> (123) 456-7890 &nbsp;</p>
-<p style="text-align: left;"><strong>Email:</strong> info@company.com &nbsp;</p>
-<p style="text-align: left; color: #666666;"><a href="http://www.company.com">Website: www.compnay.com&nbsp;</a></p>
-</td>
-</tr>
-<tr style="height: 25 px;">
-<td colspan="2" style="padding-top: 10 px; font-size: 10 px; color: #999999; height: 10 px; width: 661 px; text-align: left;">&copy; 2024 My Company Corp. All rights reserved.</td>
-</tr>
-</tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>SovFi - Email Signature</title>
+  </head>
+  <body>
+    <div class="form">
+      <input placeholder="Name" id="form_name" class="form_field" type="text" />
+      <input
+        placeholder="Position"
+        id="form_position"
+        class="form_field"
+        type="text"
+      />
+      <input
+        placeholder="Email"
+        id="form_email"
+        class="form_field"
+        type="text"
+      />
+      <input
+        placeholder="Phone"
+        id="form_phone"
+        class="form_field"
+        type="text"
+      />
+    </div>
+    <div id="container">
+      <div id="signature">
+        <div
+          class="flex"
+          style="
+            background: white;
+            width: 590px;
+            box-sizing: content-box;
+            padding: 13px 30px;
+            font-family: sans-serif;
+            font-size: 10px;
+            line-height: 120%;
+          "
+        >
+          <hr
+            style="width: 100%; border: none; border-bottom: 1px solid #000"
+          />
+          <div style="width: 100%; padding: 5px 0px; display: flex">
+            <!-- Name & Position -->
+            <div style="width: 190px">
+              <table style="height: 100%; border-collapse: collapse">
+                <tr>
+                  <td style="vertical-align: top">
+                    <div
+                      style="font-size: 15px; font-weight: 500"
+                      id="card_name"
+                    >
+                      Andrew Forson
+                    </div>
+                    <div
+                      style="margin-top: 4px; color: #626262"
+                      id="card_position"
+                    >
+                      Director
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Contact -->
+            <div style="width: 305px; padding: 27px 0px 9px 0px">
+              <table style="table-layout: fixed; border-collapse: collapse">
+                <colgroup>
+                  <col style="width: 60px" />
+                  <col style="width: 227px" />
+                </colgroup>
+                <tbody style="vertical-align: top">
+                  <tr>
+                    <th
+                      style="
+                        text-align: start;
+                        font-weight: 400;
+                        color: #626262;
+                        padding-bottom: 6px;
+                      "
+                    >
+                      E-mail
+                    </th>
+                    <td>
+                      <a
+                        style="color: #000; text-decoration: none"
+                        href="mailto:andrew@sov.fi"
+                        id="card_email_link"
+                      >
+                        andrew@sov.fi
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th
+                      style="
+                        text-align: start;
+                        font-weight: 400;
+                        color: #626262;
+                        padding-bottom: 6px;
+                      "
+                    >
+                      Website
+                    </th>
+                    <td style="color: #000">
+                      <a
+                        style="color: #000; text-decoration: none"
+                        href="https://www.sov.fi"
+                        target="_blank"
+                      >
+                        www.sov.fi
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th
+                      style="
+                        text-align: start;
+                        font-weight: 400;
+                        color: #626262;
+                      "
+                    >
+                      Phone
+                    </th>
+                    <td id="card_phone">+34 601 35 44 89</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Logo -->
+            <div style="width: 95px">
+              <table
+                style="height: 100%; width: 100%; border-collapse: collapse"
+              >
+                <tbody>
+                  <tr>
+                    <td style="vertical-align: top; text-align: right">
+                      <a href="https://www.sov.fi" target="_blank">
+                        <img src="./images/BTQ.png" width="69" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        vertical-align: bottom;
+                        text-align: right;
+                        font-size: 8px;
+                        color: #626262;
+                      "
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <hr
+            style="
+              width: 100%;
+              margin-top: 5px;
+              border: none;
+              border-bottom: 1px solid #000;
+            "
+          />
+          <div
+            style="
+              margin-top: 3px;
+              font-size: 5px;
+              line-height: 120%;
+              color: #626262;
+              min-width: 0px;
+              width: 100%;
+            "
+          >
+            This email and any attachments may contain confidential information
+            intended solely for the use of the addressee(s) named above. If you
+            are not the intended recipient, any disclosure, copying,
+            distribution, or use of the contents of this message is strictly
+            prohibited. If you have received this email in error, please notify
+            the sender immediately and delete this email and any attachments
+            from your system. This email and its attachments are believed to be
+            free of any virus or other defect that might affect any computer
+            system into which it is received and opened. However, it is the
+            responsibility of the recipient to ensure that it is virus-free, and
+            our company accepts no responsibility for any loss or damage arising
+            in any way from its use.
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button_copy">Copy Signature</button>
+
+    <script src="./index.js"></script>
+    <!-- <script src="./template.js"></script> -->
+  </body>
+</html>

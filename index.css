@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #141424; */
+}
+
+button {
+  border: none;
+  border-radius: 0.25rem;
+  /* padding: 0.8rem 1.5rem; */
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+.button_copy {
+  /* background-color: #20c6fa; */
+  background-color: #aaa;
+  color: #000000;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+}
+
+.button_copy:hover {
+  background-color: #00ffff;
+}
+
+#container {
+  margin-bottom: 1rem;
+  border: 0.125rem solid #777;
+  border-radius: 0.25rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 1rem;
+  width: 100%;
+  width: 864px;
+}
+
+input {
+  width: 100%;
+  border: 1.5px solid #777;
+  border-radius: 0.25rem;
+
+  transition: outline 0.1s;
+}
+
+.form_field {
+  color: #000;
+  font-size: 0.875rem;
+  padding: 1.25rem 1rem;
+  background-color: #fff;
+}
+
+.form_field:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.form_field:focus {
+  outline: 1px solid #000;
+}
